@@ -1,0 +1,135 @@
+/* Header Style */
+.navigation{
+    position: relative;
+    width: 100%;
+    background-color:rgba(151,166,180,0);
+    position: absolute;
+    display: block;
+    letter-spacing: 0px;
+    font-weight: 400;
+    padding: 25px 80px;
+   
+}
+
+strong {
+    font-family: 'Lato', sans-serif;
+    color:black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    position: relative;
+    vertical-align: middle;
+    font-size: 36px;
+}
+
+.navigation a{
+    font-family: 'Lato', sans-serif;
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    color: black;
+    display: block;
+    float: left;
+    vertical-align: middle;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+.navigation a:hover{
+    color: #999;
+    text-decoration: none;
+}
+.navigation span.right{
+    float: right;
+    padding-top: 10px;
+    vertical-align: middle;
+
+}
+.navigation span.right a{
+    float: none;
+    display: inline;
+    vertical-align: middle;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+
+body{
+  background:white;
+}
+
+
+
+.image-gallery{ 
+  width:80%;
+  margin:0 auto; 
+}
+
+.image-gallery img {
+  max-width:100%;
+  margin-bottom:15px;
+  
+}
+
+/* -- Big screen size -- */ 
+.image-gallery{  
+  -webkit-column-count: 5;  -webkit-column-gap: 15px;
+     -moz-column-count: 5;     -moz-column-gap: 15px;
+          column-count: 5;          column-gap: 15px;  
+}
+
+/* -- Medium screen size -- */
+@media screen and (max-width: 1100px) {
+  .image-gallery{ 
+    -webkit-column-count: 3;  -webkit-column-gap: 15px;
+       -moz-column-count: 3;     -moz-column-gap: 15px;
+            column-count: 3;          column-gap: 15px;  
+  }
+ .image-gallery{
+  width:85%;
+
+  }
+}
+
+/* -- Small screen size -- */
+@media screen and (max-width: 800px) {
+  .image-gallery{ 
+    -webkit-column-count: 2;  -webkit-column-gap: 15px;
+       -moz-column-count: 2;     -moz-column-gap: 15px;
+            column-count: 2;          column-gap: 15px;  
+  }
+  .image-gallery{
+    width:90%;
+  }
+}
+
+/* Micro screen size*/
+@media screen and (max-width: 600px) {
+  .image-gallery{ 
+    -webkit-column-count: 1;  -webkit-column-gap: 0px;
+       -moz-column-count: 1;     -moz-column-gap: 0px;
+            column-count: 1;          column-gap: 0px;  
+  }
+  .image-gallery{
+    width:95%;
+  }
+  
+  .image-gallery img{ /* fills 100% width on small screen */
+    width:100%;
+    height:auto;
+  }
+}
+
+
+
+
